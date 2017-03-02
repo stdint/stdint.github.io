@@ -27,6 +27,7 @@ github_username:  c-zheng
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-merlot
+#theme: minima
 gems:
   - jekyll-feed
 exclude:
