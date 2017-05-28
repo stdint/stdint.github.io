@@ -14,3 +14,7 @@ jekyll-archives:
   layout: category_archives
   permalinks:
     category: /categories/:name/
+
+# Config
+code_branch: develop
+deploy_branch: master
