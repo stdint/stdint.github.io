@@ -21,4 +21,5 @@ task :deploy do
   sh "git status"
   sh "git add ."
   sh "git commit -m 'Automatic update...'"
+  sh "git push origin #{DEPLOY_BRANCH}"
 end
