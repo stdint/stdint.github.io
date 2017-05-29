@@ -17,8 +17,7 @@ task :deploy do
 
   sh "git checkout #{DEPLOY_BRANCH}"
   sh "cp -r _site/* ."
-  sh "git status"
   sh "git add ."
-  sh "git commit -m 'Automatic update...'"
-  sh "git push https://#{ENV['GITHUB_TOKEN']}@github.com/c-zheng/c-zheng.github.io.git #{DEPLOY_BRANCH}"
+  sh "git commit -q -m 'Automatic update...'"
+  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/c-zheng/c-zheng.github.io.git #{DEPLOY_BRANCH}"
 end
