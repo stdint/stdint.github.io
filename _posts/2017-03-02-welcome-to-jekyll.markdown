@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "中文字体尝试 to Jekyll!"
+title:  "测试  中文字体尝试 to Jekyll!"
 date:   2017-03-01 22:45:10 -0800
 categories: jekyll update
 ---
