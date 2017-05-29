@@ -5,21 +5,20 @@ CONFIG = YAML.load(File.read('_config.yml'))
 CODE_BRANCH = CONFIG["code_branch"]
 DEPLOY_BRANCH = CONFIG["deploy_branch"]
 
-task :build do
+task :deploy do
   puts "Building..."
+  puts "Token is #{ENV['GITHUB_TOKEN']}"
   sh "git checkout #{CODE_BRANCH}"
   sh "bundle exec jekyll build"
-end
 
-task :deploy do
   puts "Serving..."
-  #sh "git config --global user.name 'Travis CI'"
-  #sh "git config --global user.email 'travis@travis-ci.com'"
-  puts "Switch to branch #{DEPLOY_BRANCH}"
+  sh "git config --global user.name 'Travis CI'"
+  sh "git config --global user.email 'travis@travis-ci.org'"
+
   sh "git checkout #{DEPLOY_BRANCH}"
-  sh "cp -r _site/ ."
+  sh "cp -r _site/* ."
   sh "git status"
   sh "git add ."
   sh "git commit -m 'Automatic update...'"
-  sh "git push origin #{DEPLOY_BRANCH}"
+  sh "git push https://#{ENV['GITHUB_TOKEN']}@github.com/c-zheng/c-zheng.github.io.git #{DEPLOY_BRANCH}"
 end

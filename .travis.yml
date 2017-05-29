@@ -1,4 +1,16 @@
 language: ruby
 rvm:
   - 2.4
-script: rake build; rake deploy
+
+install:
+  - git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
+  - cd $TRAVIS_REPO_SLUG
+  - git checkout -qf $TRAVIS_COMMIT
+
+script: 
+  - bundle install
+  - rake deploy
+
+env:
+  global:
+    - secure: "NjXQgmthAtxOGf9TQKslN8aUMNM6UistZkfUdQL4fKLwCjKp21WDyAcYIT9+4nqn0zc5srR9tbvXLIHX3ODFZ58UoB9votmj1ObTnF5inSxifZT+D3bqShJqy9VxOvWmA8KocHP4DnxOSSmndsrwp1f1YaRbjrdeXbnOu3WzpX8FmQY4iz+TPj51JKpq/hSR191CEAg4mCpXQg/Z8hwePLGwUnv7wQSBjpA0MJVlR55Q7vpEWuqQ6/7yCpMyUMMI3I/2gQDEQUKtAMD6TI5zXDL/Are2ylBt98EuK3fJoZm1SuIB9/PGEmClbDorsEhCBhWtbSdHFxE/L491tizAr+lKDBm84Q7iLUnS+uzeyU3xoZV2+Xn6ReplTD7BLz+SxlTRHA3So+Kg9Hc7Mvf7Rpx2+teU8QlisXb5ER9+7JvDtsXhwftD7lwVHC4t2Xn1sVMewyjYPToE4vHFKjRA0xGYlpoVOrsXWAPZlAdMxMSrfPsBmlHhOwVuyZbj3VaVKvabaqaFnuaxmyGPqH87al1F+9MfpOnkBZufoZiiI7hO7Od0P46y/DRnkJ8PknXQvPQG4m1ZWN5t6e1cWpEd3rjEAsL6r1Y1Ew/MCyDrDSNxr/Ucbmq4cAJx0zIXFXXDQn+jDlzsJYLBvVuTWoisFPidX6K5oDGUyR7qARVYNrY="
