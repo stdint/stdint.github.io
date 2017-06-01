@@ -15,6 +15,9 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
 
+# misc
+google_analytics: UA-100329187-1
+
 # Config
 code_branch: develop
 deploy_branch: master
