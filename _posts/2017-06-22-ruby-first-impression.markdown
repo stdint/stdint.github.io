@@ -17,7 +17,7 @@ categories: ruby
 - 首字母大写代表常量，小写代表变量
 - 自带两种打印方法puts和print，puts自带回车
 - 简单的array unpacking，例子：
-'''ruby
+{% highlight ruby %}
 first, second, third = ARGV
-'''
+{% endhighlight %}
 
