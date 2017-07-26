@@ -3,8 +3,6 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
   - title: "Archives"
     url: /archives/
   - title: "👍One Year"
