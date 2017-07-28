@@ -2,7 +2,7 @@
 layout: post
 title: "嵌入式系统中的存储器"
 date: 2017-06-07 21:08:25 -0700
-categories:
+categories: 嵌入式
 ---
 一般来说，嵌入式系统中常见的存储器可以分为以下几类：
 
@@ -47,4 +47,3 @@ categories:
 - 可编程次数：RAM、NVRAM无限次，EPROM、EEPROM、Flash有限次寿命
 - 成本：SRAM、EEPROM、NVRAM成本高，DRAM、PROM、EPROM、Flash适中，Masked ROM成本低
 - 速度：EEPROM、Flash读取快，擦除慢；DRAM速度适中；其余均快
-
