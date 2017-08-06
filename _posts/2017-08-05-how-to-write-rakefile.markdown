@@ -13,6 +13,7 @@ Rakefile完全使用Ruby语法，没有额外的特殊语法。
 Make就没有这么省事了。
 
 # 任务
+## 任务规则
 - 定义一个任务：
 {% highlight ruby %}
 task :name #Symbol类型作为任务名
@@ -58,6 +59,14 @@ end
 desc “用于注释下面的task”
 task :name => [:pre1, :pre2, :pre3] do
   ...
+end
+{% endhighlight %}
+
+## 执行Shell命令
+Rake任务并不限于Ruby语句，也可以执行Shell命令。
+{% highlight ruby %}
+task :pwd do
+  sh “pwd”
 end
 {% endhighlight %}
 
