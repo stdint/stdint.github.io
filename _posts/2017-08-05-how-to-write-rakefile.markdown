@@ -16,7 +16,7 @@ Make就没有这么省事了。
 ## 任务规则
 - 定义一个任务：
 {% highlight ruby %}
-task :name #Symbol类型作为任务名
+task :name #标记类型作为任务名
 task 'name' #字符串作为任务名
 task :name do |t|
 ...
@@ -38,7 +38,7 @@ end
 - 文件任务
 文件任务用于生成一些新的文件，需要使用file方法。
 {% highlight ruby %}
-file "filename" => [“a.o”, "b.o"] do |t|
+file "filename" => ["a.o", "b.o"] do |t|
   sh "cc -o #{t.name} #{t.prerequisites.join(' ')}"
 end
 {% endhighlight %}
@@ -56,7 +56,7 @@ end
 {% endhighlight %}
 - 注释
 {% highlight ruby %}
-desc “用于注释下面的task”
+desc "用于注释下面的任务"
 task :name => [:pre1, :pre2, :pre3] do
   ...
 end
@@ -66,7 +66,7 @@ end
 Rake任务并不限于Ruby语句，也可以执行Shell命令。
 {% highlight ruby %}
 task :pwd do
-  sh “pwd”
+  sh "pwd"
 end
 {% endhighlight %}
 
