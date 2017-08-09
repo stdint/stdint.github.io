@@ -1,5 +1,6 @@
 require 'rake'
 require 'yaml'
+require 'date'
 
 CONFIG = YAML.load(File.read('_config.yml'))
 CODE_BRANCH = CONFIG["code_branch"]
@@ -26,3 +27,17 @@ task :deploy => [:build, :config] do
   sh "git commit -q -m 'Automatic update...'"
   sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/c-zheng/c-zheng.github.io.git #{DEPLOY_BRANCH}"
 end
+
+desc "Generate a new blog post"
+task :newpost do |b|
+  NEWPOST = DateTime.now.strftime("_posts/%F-#{ENV['name']}.markdown")
+  File.open(NEWPOST, 'a') do |f|
+    f.puts "---"
+    f.puts "layout: post"
+    f.puts "title: \"#{ENV['name']}\""
+    f.puts "date: " + DateTime.now.strftime("%F %T %z")
+    f.puts "categories:"
+    f.puts "---"
+  end
+end
+
