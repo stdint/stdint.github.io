@@ -25,7 +25,7 @@ task :deploy => [:build, :config] do
   sh "cp -r _site/* ."
   sh "git add ."
   sh "git commit -q -m 'Automatic update...'"
-  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/c-zheng/c-zheng.github.io.git #{DEPLOY_BRANCH}"
+  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git #{DEPLOY_BRANCH}"
 end
 
 desc "Generate a new blog post"
