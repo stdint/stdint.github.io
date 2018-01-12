@@ -8,7 +8,6 @@ install:
   - git checkout -qf $TRAVIS_COMMIT
 
 script:
-  - bundle install
   - rake
 
 env:

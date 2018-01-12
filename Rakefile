@@ -1,3 +1,31 @@
+require 'rake'
+require 'date'
+
+CODE_BRANCH = develop
+DEPLOY_BRANCH = gh-pages
+
+desc "Default task is :deploy"
+task :default => :deploy
+
+task :config do
+  sh "git config --global user.name 'Travis CI'"
+  sh "git config --global user.email 'travis@travis-ci.org'"
+end
+
+task :build => [:config] do
+  sh "git checkout #{CODE_BRANCH}"
+  sh "jekyll build"
+end
+
+desc "Deploy the blog"
+task :deploy => [:build, :config] do
+  sh "git checkout #{DEPLOY_BRANCH}"
+  sh "cp -r _site/* ."
+  sh "git add ."
+  sh "git commit -q -m 'Automatic update...'"
+  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git #{DEPLOY_BRANCH}"
+end
+
   # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
   # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
   desc "Start a new post"
