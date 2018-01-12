@@ -17,7 +17,7 @@ end
 desc "Deploy the blog"
 task :deploy => [:build, :config] do
   sh "git checkout master"
-  sh "cp -rf _site/* ."
+  sh "cp -r _site/* ."
   sh "git add ."
   sh "git commit -q -m 'Automatic update...'"
   sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git master"
