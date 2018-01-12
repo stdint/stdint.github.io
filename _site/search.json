@@ -1,0 +1,67 @@
+[
+	
+		{
+		  "title"      : "如何写Rakefile",
+		  "category"   : "",
+		  "url"        : "//ruby/how-to-write-rakefile",
+		  "date"       : "2017-08-05 21:00:15 -0700",
+		  "shortdate"  : "August 05, 2017"
+		} ,
+	
+		{
+		  "title"      : "鸡汤文读后感",
+		  "category"   : "",
+		  "url"        : "//%E6%83%B3%E6%B3%95/reading-chicken-soup",
+		  "date"       : "2017-07-27 23:22:18 -0700",
+		  "shortdate"  : "July 27, 2017"
+		} ,
+	
+		{
+		  "title"      : "C++变量初始化方法",
+		  "category"   : "",
+		  "url"        : "//c++/c++-initialization",
+		  "date"       : "2017-07-17 22:40:26 -0700",
+		  "shortdate"  : "July 17, 2017"
+		} ,
+	
+		{
+		  "title"      : "Ruby初体验",
+		  "category"   : "",
+		  "url"        : "//ruby/ruby-first-impression",
+		  "date"       : "2017-06-22 21:10:32 -0700",
+		  "shortdate"  : "June 22, 2017"
+		} ,
+	
+		{
+		  "title"      : "在美国开车的注意事项",
+		  "category"   : "",
+		  "url"        : "//thoughts/driving-differences-between-china-and-us",
+		  "date"       : "2017-06-17 21:58:10 -0700",
+		  "shortdate"  : "June 17, 2017"
+		} ,
+	
+		{
+		  "title"      : "嵌入式系统中的存储器",
+		  "category"   : "",
+		  "url"        : "//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems",
+		  "date"       : "2017-06-07 21:08:25 -0700",
+		  "shortdate"  : "June 07, 2017"
+		} ,
+	
+		{
+		  "title"      : "Github Pages使用第三方主题",
+		  "category"   : "",
+		  "url"        : "//github/pages,/jekyll/theme/github-pages-use-third-party-theme",
+		  "date"       : "2017-05-30 23:29:33 -0700",
+		  "shortdate"  : "May 30, 2017"
+		} ,
+	
+		{
+		  "title"      : "Welcome to Jekyll!",
+		  "category"   : "",
+		  "url"        : "//jekyll/update/welcome-to-jekyll",
+		  "date"       : "2017-03-01 22:45:10 -0800",
+		  "shortdate"  : "March 01, 2017"
+		} 
+	
+]
