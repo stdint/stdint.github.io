@@ -17,6 +17,7 @@ end
 desc "Deploy the blog"
 task :deploy => [:build, :config] do
   sh "git checkout master"
+  sh "rm -rf *.html"
   sh "cp -rf _site/* ."
   sh "git add ."
   sh "git commit -q -m 'Automatic update...'"
