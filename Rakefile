@@ -16,11 +16,11 @@ end
 
 desc "Deploy the blog"
 task :deploy => [:build, :config] do
-  sh "git checkout master"
+  sh "git checkout gh-pages"
   sh "cp -r _site/* ."
   sh "git add ."
   sh "git commit -q -m 'Automatic update...'"
-  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git master"
+  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git gh-pages"
 end
 
   # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
