@@ -34,9 +34,9 @@ links:
     external: false
     icon: home
   - title: Featured Posts
-    url: /featured
+    url: /featured/index.html
   - title: Categories
-    url: /categories
+    url: /categories/index.html
   - title: About
     url: /
 
