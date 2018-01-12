@@ -11,7 +11,7 @@ end
 
 task :build => [:config] do
   sh "git checkout develop"
-  sh "jekyll build"
+  sh "bundle exec jekyll build"
 end
 
 desc "Deploy the blog"
