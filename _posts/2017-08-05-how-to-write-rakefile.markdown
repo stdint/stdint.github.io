@@ -1,9 +1,16 @@
 ---
 layout: post
-title: "如何写Rakefile"
+published: true
+title: 如何写Rakefile
+mathjax: false
+featured: true
+comments: false
+categories: 
+  - ruby
+tags: rake
 date: 2017-08-05 21:00:15 -0700
-categories:
 ---
+
 Rakefile完全使用Ruby语法，没有额外的特殊语法。
 
 # Rake执行的path
@@ -15,52 +22,52 @@ Make就没有这么省事了。
 # 任务
 ## 任务规则
 - 定义一个任务：
-{% highlight ruby %}
-task :name #标记类型作为任务名
-task 'name' #字符串作为任务名
-task :name do |t|
-...
-end
-task :name => :prerequisite #任务的依赖规则
-task :name => [:pre1, :pre2] #多个依赖
-{% endhighlight %}
+  {% highlight ruby %}
+  task :name #标记类型作为任务名
+  task 'name' #字符串作为任务名
+  task :name do |t|
+  ...
+  end
+  task :name => :prerequisite #任务的依赖规则
+  task :name => [:pre1, :pre2] #多个依赖
+  {% endhighlight %}
 - 默认任务：
-可以选择某个任务作为默认任务
-{% highlight ruby %}
-task :default => :one
-task :one => :two do
+  可以选择某个任务作为默认任务
+  {% highlight ruby %}
+  task :default => :one
+  task :one => :two do
   ...
-end
-task :two do
+  end
+  task :two do
   ...
-end
-{% endhighlight %}
+  end
+  {% endhighlight %}
 - 文件任务
-文件任务用于生成一些新的文件，需要使用file方法。
-{% highlight ruby %}
-file "filename" => ["a.o", "b.o"] do |t|
+  文件任务用于生成一些新的文件，需要使用file方法。
+  {% highlight ruby %}
+  file "filename" => ["a.o", "b.o"] do |t|
   sh "cc -o #{t.name} #{t.prerequisites.join(' ')}"
-end
-{% endhighlight %}
+  end
+  {% endhighlight %}
 - 文件夹任务
-用于生成文件夹，可以嵌套生成。
-{% highlight ruby %}
-file "top/second/third"
-{% endhighlight %}
+  用于生成文件夹，可以嵌套生成。
+  {% highlight ruby %}
+  file "top/second/third"
+  {% endhighlight %}
 - 并行任务
-可以多线程并行执行依赖规则。
-{% highlight ruby %}
-multitask :copyfiles => [:pre1, :pre2, :pre3] do
+  可以多线程并行执行依赖规则。
+  {% highlight ruby %}
+  multitask :copyfiles => [:pre1, :pre2, :pre3] do
   puts "Tasks are done!"
-end
-{% endhighlight %}
+  end
+  {% endhighlight %}
 - 注释
-{% highlight ruby %}
-desc "用于注释下面的任务"
-task :name => [:pre1, :pre2, :pre3] do
+  {% highlight ruby %}
+  desc "用于注释下面的任务"
+  task :name => [:pre1, :pre2, :pre3] do
   ...
-end
-{% endhighlight %}
+  end
+  {% endhighlight %}
 
 ## 执行Shell命令
 Rake任务并不限于Ruby语句，也可以执行Shell命令。
@@ -90,8 +97,8 @@ require 'rake/clean'
 # 一些有用的Rake命令
 以下命令均可以添加额外的任务名、名字域名，来缩小打印信息范围。
 - rake -T
-打印任务注释（也就是desc方法定义的字符串）。
+  打印任务注释（也就是desc方法定义的字符串）。
 - rake -P
-打印任务的依赖关系。
+  打印任务的依赖关系。
 - rake -W
-显示某个任务定义在Rakefile的哪一行，便于debug。
+  显示某个任务定义在Rakefile的哪一行，便于debug。

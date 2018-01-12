@@ -1,43 +1,97 @@
-require 'rake'
-require 'yaml'
-require 'date'
-
-CONFIG = YAML.load(File.read('_config.yml'))
-CODE_BRANCH = CONFIG["code_branch"]
-DEPLOY_BRANCH = CONFIG["deploy_branch"]
-
-desc "Default task is :deploy"
-task :default => :deploy
-
-task :config do
-  sh "git config --global user.name 'Travis CI'"
-  sh "git config --global user.email 'travis@travis-ci.org'"
-end
-
-task :build => [:config] do
-  sh "git checkout #{CODE_BRANCH}"
-  sh "bundle exec jekyll build"
-end
-
-desc "Deploy the blog"
-task :deploy => [:build, :config] do
-  sh "git checkout #{DEPLOY_BRANCH}"
-  sh "cp -r _site/* ."
-  sh "git add ."
-  sh "git commit -q -m 'Automatic update...'"
-  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git #{DEPLOY_BRANCH}"
-end
-
-desc "Generate a new blog post"
-task :newpost do |b|
-  NEWPOST = DateTime.now.strftime("_posts/%F-#{ENV['name']}.markdown")
-  File.open(NEWPOST, 'a') do |f|
-    f.puts "---"
-    f.puts "layout: post"
-    f.puts "title: \"#{ENV['name']}\""
-    f.puts "date: " + DateTime.now.strftime("%F %T %z")
-    f.puts "categories:"
-    f.puts "---"
+  # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
+  # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
+  desc "Start a new post"
+  task :new, :title do |t, args|
+   args.with_defaults(:title => 'My New Post')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: personal"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: true"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
   end
-end
 
+  desc "Start a new quote"
+  task :newquote, :title do |t, args|
+   args.with_defaults(:title => 'My New quote')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "type: quote"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: quotes"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: false"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
+
+  desc "Start a new status"
+  task :newstatus, :title do |t, args|
+   args.with_defaults(:title => 'My New Post')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "type: status"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: status"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: false"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
+
+    # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
+  # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
+  desc "Start a new page"
+  task :newpage, :title do |t, args|
+   args.with_defaults(:title => 'My New page')
+   title = args.title
+   filename = "#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new page: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: page"
+     post.puts "permalink: #{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}/index.html"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: true"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
