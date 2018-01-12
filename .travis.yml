@@ -8,7 +8,7 @@ install:
   - git checkout -qf $TRAVIS_COMMIT
 
 script:
-  - rake
+  - rake --trace
 
 env:
   global:
