@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>嵌入式系统中的存储器</title>
+<meta name="description" content="植物园">
+<meta name="keywords" content="">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嵌入式系统中的存储器">
+<meta property="og:description" content="植物园">
+<meta property="og:url" content="//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems">
+<meta property="og:site_name" content="stdint.github.io">
+<meta property="og:image" content="//images/">
+
+
+
+
+
+<link rel="canonical" href="//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems">
+<link href="//feed.xml" type="application/atom+xml" rel="alternate" title="stdint.github.io Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <link rel="stylesheet" href="//assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//assets/css/vendor/normalizeb146.css?v=77a7756db2">
+    <link rel="stylesheet" href="//assets/css/vendor/foundation.minb146.css?v=77a7756db2">
+    <link rel="stylesheet" href="//assets/css/styleb146.css?v=77a7756db2">
+    <link rel="stylesheet" href="//assets/css/postb146.css?v=77a7756db2">
+    <script src="//assets/js/vendor/modernizrb146.js?v=77a7756db2"></script>
+
+
+
+
+
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+<main id="summer-post-container" class="summer-post-container intro-effect-sliced" role="main">
+    
+    
+        <header class="summer-post-header">
+            <div class="bg-img"></div>
+            <div class="summer-post-menu-header">
+                <div class="summer-blog-menu">      
+    <div class="summer-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="summer-menu">
+        <li class="summer-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="//">Home</a>
+                 </li>
+
+            <li>
+                    <a href="//featured/index.html">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="//categories/index.html">Categories</a>
+                 </li>
+
+            <li>
+                    <a href="//">About</a>
+                 </li>
+            
+    </ul>
+
+</div>
+            </div>
+            <div class="summer-post-title bg-check">
+                <h1>嵌入式系统中的存储器</h1>
+                <p>by <strong>Your Name</strong> &#8212;  <strong><time datetime="2017-06-08T00:08:25-04:00">07 Jun 2017</time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        
+        <article class="summer-post-content post">
+            <div><p>一般来说，嵌入式系统中常见的存储器可以分为以下几类：</p>
+
+<ol>
+  <li>RAM，随机存储器</li>
+  <li>ROM，只读存储器</li>
+  <li>混合型存储器</li>
+</ol>
+
+<p>每一类存储器根据特性还可以细分成很多不同的器件类型。下面我就说明一下每一类存储器。</p>
+
+<h1 id="主要特性">主要特性</h1>
+<h2 id="ram">RAM</h2>
+<p>可读写的存储器，存取速度快，相对造价高。</p>
+<ul>
+  <li>SRAM:只要通电，数据就不会丢失</li>
+  <li>DRAM:不论通电与否，数据生命期较短，大约4ms</li>
+  <li>SRAM vs DRAM:SRAM存取时间比DRAM快大约4倍，但是成本远高于后者</li>
+</ul>
+
+<h2 id="rom">ROM</h2>
+<p>只读型存储器，读取速度快。</p>
+<ul>
+  <li>Masked ROM:普通的只读存储器，生产时写入数据，成本低</li>
+  <li>PROM:可编程一次，经常作为OTP器件</li>
+  <li>EPROM:可擦除的可编程器件，一般需要强紫外光源擦除</li>
+</ul>
+
+<h2 id="hybrid">Hybrid</h2>
+<p>混合型存储器，混合了RAM和ROM的特点的一类器件。</p>
+<ul>
+  <li>EEPROM:
+    <ul>
+      <li>通过上电擦除</li>
+      <li>写完数据后数据不会丢失，类似ROM</li>
+      <li>和RAM相比，保存数据的操作要慢得多</li>
+      <li>最小可以擦除一个字节</li>
+    </ul>
+  </li>
+  <li>Flash:
+    <ul>
+      <li>集成度高，成本低，非易失，可重复编程</li>
+      <li>读取速度快，存储速度慢</li>
+      <li>最小擦除单元为一个sector</li>
+    </ul>
+  </li>
+  <li>NVRAM:
+    <ul>
+      <li>可以看做加了电池的SRAM</li>
+      <li>比SRAM更贵，因为加了电池</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="pk环节">PK环节</h1>
+<ul>
+  <li>易失性: RAM易失，其余非易失</li>
+  <li>可写：RAM、EPROM、EEPROM、Flash、NVRAM可写，PROM可写一次，Masked ROM不可写</li>
+  <li>最小擦除单元：Masked ROM、PROM不可擦除，EPROM整片擦除，Flash按sector擦除，其余均可以擦除一个字节</li>
+  <li>可编程次数：RAM、NVRAM无限次，EPROM、EEPROM、Flash有限次寿命</li>
+  <li>成本：SRAM、EEPROM、NVRAM成本高，DRAM、PROM、EPROM、Flash适中，Masked ROM成本低</li>
+  <li>速度：EEPROM、Flash读取快，擦除慢；DRAM速度适中；其余均快</li>
+</ul>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="summer-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;嵌入式系统中的存储器&quot;%20//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems%20via%20&#64;"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=//%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="summer-author-info">
+                <div class="row">
+                    <section class="summer-post-author small-12 columns">
+                        
+                            <img src="//images/cute_cactus.gif" class="summer-post-author-avatar" alt="Your Name's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>Your Name</h1>
+                        
+                        
+                            <p><a href="mailto:you@email.com" class="author-website">you@email.com</a></p>
+                        
+                        
+                            <p>Hello</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <div class="cf"></div>
+
+    <footer class="summer-site-footer">
+    <div class="copyright">
+         <section>All content copyright <a href="/">Your Name</a> &copy; 2018 &bull; All rights reserved.</section>
+         <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+    </div>
+    <div class="social-icons">
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer> 
+</main>    
+    <script src="//assets/js/public/jqueryb146.js?v=77a7756db2"></script>
+
+    
+    <script src="//assets/js/vendor/fastclickb146.js?v=77a7756db2"></script>
+    <script src="//assets/js/vendor/foundation.minb146.js?v=77a7756db2"></script>
+    <script src="//assets/js/vendor/background-checkb146.js?v=77a7756db2"></script>
+    <script src="//assets/js/vendor/post-header-animationsb146.js?v=77a7756db2"></script>
+    <script src="//assets/js/summerb146.js?v=77a7756db2"></script>
+
+ 
+</body>
+</html>
