@@ -20,7 +20,7 @@ task :deploy => [:build, :config] do
   sh "cp -r _site/* ."
   sh "git add ."
   sh "git commit -q -m 'Automatic update...'"
-  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git gh-pages"
+  sh "git push -q https://#{ENV['GITHUB_TOKEN']}@github.com/stdint/stdint.github.io.git gh-pages --force"
 end
 
   # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
