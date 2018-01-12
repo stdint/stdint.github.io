@@ -9,7 +9,6 @@ install:
 
 script:
   - bundle install --jobs 4
-  - rake
 
 env:
   global:
