@@ -61,8 +61,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/'
-  relativeLinks: 'http://hmfaysal.github.io/links.jsonp'
+  siteurl: 'http://stdint.github.io/'
+  relativeLinks: 'http://stdint.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
