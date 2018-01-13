@@ -1,8 +1,13 @@
 ---
 layout: post
 title: "Ruby初体验"
+published: true
+mathjax: false
+featured: true
+comments: false
 date: 2017-06-22 21:10:32 -0700
-categories: Ruby
+categories:
+  - ruby
 ---
 今天初步体验了一下Ruby语言，获得了一点初级的认识。
 
