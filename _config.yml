@@ -33,8 +33,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Featured Posts
-    url: /featured/index.html
+  - title: Posts
+    url: /featured
   - title: Categories
     url: /categories/index.html
   - title: About
