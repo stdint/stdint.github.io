@@ -4,7 +4,6 @@ title: "Github Pages使用第三方主题"
 date: 2017-05-30 23:29:33 -0700
 categories: 
   - Github Pages
-  - Jekyll Theme
 ---
 第N次开博客。使用的是Github官方支持的jekyll和免费的静态域名，加上git以及markdown的加持，感觉这次说不定能写下去!（好大的一个flag......)
 
