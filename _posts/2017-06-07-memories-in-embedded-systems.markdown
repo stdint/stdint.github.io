@@ -2,6 +2,7 @@
 layout: post
 title: "嵌入式系统中的存储器"
 date: 2017-06-07 21:08:25 -0700
+featured: true
 categories:
   - 嵌入式
 ---

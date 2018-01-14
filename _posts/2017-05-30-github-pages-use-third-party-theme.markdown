@@ -2,6 +2,7 @@
 layout: post
 title: "Github Pages使用第三方主题"
 date: 2017-05-30 23:29:33 -0700
+featured: true
 categories: 
   - Github Pages
 ---

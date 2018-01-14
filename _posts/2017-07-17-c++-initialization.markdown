@@ -2,6 +2,7 @@
 layout: post
 title: "C++变量初始化方法"
 date: 2017-07-17 22:40:26 -0700
+featured: true
 categories: 
   - C++
 ---

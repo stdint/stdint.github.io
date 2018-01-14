@@ -2,6 +2,7 @@
 layout: post
 title: "在美国开车的注意事项"
 date: 2017-06-17 21:58:10 -0700
+featured: true
 categories:
   - 想法
 ---
