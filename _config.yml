@@ -1,5 +1,4 @@
 description:      "植物园"
-share:            true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
@@ -17,8 +16,6 @@ owner:
   weixin:       Yes
   github:       YourName
   instagram:        YourName
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-100329187-1
