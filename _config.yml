@@ -14,8 +14,8 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   weibo:        Yes
   weixin:       Yes
-  github:       YourName
-  instagram:        YourName
+  github:       stdint
+  instagram:    zchen1988
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-100329187-1
