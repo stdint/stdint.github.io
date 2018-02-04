@@ -48,6 +48,28 @@ end
    end
   end
 
+  desc "Start a new weekly"
+  task :newweekly do
+   title = "#{Time.now.strftime('%Y-%m-%d')}-weekly"
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "title: \"#{Time.now.strftime('%Y-%m-%d')} 周记\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: 周记"
+     post.puts "featured: true"
+     post.puts "tags: []"
+     post.puts "imagefeature: "
+     post.puts "comments: false"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
+
   desc "Start a new quote"
   task :newquote, :title do |t, args|
    args.with_defaults(:title => 'My New quote')
