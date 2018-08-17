@@ -1,14 +1,6 @@
 [
 	
 		{
-		  "title"      : "Forestry.io测试",
-		  "category"   : "",
-		  "url"        : "https://stdint.github.io/forestry-io",
-		  "date"       : "2018-08-16 22:42:20 -0400",
-		  "shortdate"  : "August 16, 2018"
-		} ,
-	
-		{
 		  "title"      : "如何写Rakefile",
 		  "category"   : "",
 		  "url"        : "https://stdint.github.io/ruby/how-to-write-rakefile",

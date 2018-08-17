@@ -38,11 +38,6 @@ callback([
   {
     "text": "如何写Rakefile",
     "href": "https://stdint.github.io/ruby/how-to-write-rakefile"
-  } ,
-
-  {
-    "text": "Forestry.io测试",
-    "href": "https://stdint.github.io/forestry-io"
   } 
 
 ])
