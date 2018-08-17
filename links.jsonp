@@ -1,11 +1,48 @@
----
----
 callback([
-{% assign sorted = (site.posts reversed | sort: title) %}
-{% for post in sorted %}
+
   {
-    "text": "{{post.title | replace:'"','\"'}}",
-    "href": "{{site.url}}{{post.url}}"
-  } {% unless forloop.last %},{% endunless%}
-{% endfor %}
+    "text": "Welcome to Jekyll!",
+    "href": "https://stdint.github.io/jekyll/update/welcome-to-jekyll"
+  } ,
+
+  {
+    "text": "Github Pages使用第三方主题",
+    "href": "https://stdint.github.io/github/pages,/jekyll/theme/github-pages-use-third-party-theme"
+  } ,
+
+  {
+    "text": "嵌入式系统中的存储器",
+    "href": "https://stdint.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F/memories-in-embedded-systems"
+  } ,
+
+  {
+    "text": "在美国开车的注意事项",
+    "href": "https://stdint.github.io/thoughts/driving-differences-between-china-and-us"
+  } ,
+
+  {
+    "text": "Ruby初体验",
+    "href": "https://stdint.github.io/ruby/ruby-first-impression"
+  } ,
+
+  {
+    "text": "C++变量初始化方法",
+    "href": "https://stdint.github.io/c++/c++-initialization"
+  } ,
+
+  {
+    "text": "鸡汤文读后感",
+    "href": "https://stdint.github.io/%E6%83%B3%E6%B3%95/reading-chicken-soup"
+  } ,
+
+  {
+    "text": "如何写Rakefile",
+    "href": "https://stdint.github.io/ruby/how-to-write-rakefile"
+  } ,
+
+  {
+    "text": "Forestry.io测试",
+    "href": "https://stdint.github.io/forestry-io"
+  } 
+
 ])
