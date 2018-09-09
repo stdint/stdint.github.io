@@ -8,3 +8,5 @@ fields:
   name: tl_dr
   description: tl;dr
 - type: textarea
+pages:
+- content/post/.md
