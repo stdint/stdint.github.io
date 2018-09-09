@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Natrium Theme</title>
+    <link>https://stdint.github.io/categories/ruby/</link>
+    <description>Recent content in Ruby on Natrium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2017 21:00:15 -0700</lastBuildDate>
+    
+	<atom:link href="https://stdint.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何写Rakefile</title>
+      <link>https://stdint.github.io/%E5%A6%82%E4%BD%95%E5%86%99rakefile/</link>
+      <pubDate>Sat, 05 Aug 2017 21:00:15 -0700</pubDate>
+      
+      <guid>https://stdint.github.io/%E5%A6%82%E4%BD%95%E5%86%99rakefile/</guid>
+      <description>Rakefile完全使用Ruby语法，没有额外的特殊语法。
+Rake执行的path 在某个项目中的任何一个目录下下执行rake，如果当前目录下没有Rakefile，那么rake会自动向着根目录的方向去寻找Rakefile。 这样的好处是在任何文件夹下定义的一些rake模块都是以Rakefile所在的目录的路径执行的。
+Make就没有这么省事了。
+任务 任务规则  定义一个任务： {% highlight ruby %} task :name #标记类型作为任务名 task &amp;lsquo;name&amp;rsquo; #字符串作为任务名 task :name do |t| &amp;hellip; end task :name =&amp;gt; :prerequisite #任务的依赖规则 task :name =&amp;gt; [:pre1, :pre2] #多个依赖 {% endhighlight %} 默认任务： 可以选择某个任务作为默认任务 {% highlight ruby %} task :default =&amp;gt; :one task :one =&amp;gt; :two do &amp;hellip; end task :two do &amp;hellip; end {% endhighlight %} 文件任务 文件任务用于生成一些新的文件，需要使用file方法。 {% highlight ruby %} file &amp;ldquo;filename&amp;rdquo; =&amp;gt; [&amp;ldquo;a.</description>
+    </item>
+    
+    <item>
+      <title>Ruby初体验</title>
+      <link>https://stdint.github.io/ruby%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Thu, 22 Jun 2017 21:10:32 -0700</pubDate>
+      
+      <guid>https://stdint.github.io/ruby%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+      <description>今天初步体验了一下Ruby语言，获得了一点初级的认识。
+ 动态类型语言 解释器语言 格式要求比Python宽松 纯面向对象的语言，所有的元素都是对象 类似C的语法结构  语法糖： - 减少了很多花括号的使用 - 首字母大写代表常量，小写代表变量 - 自带两种打印方法puts和print，puts自带回车 - 简单的array unpacking，例子： {% highlight ruby %} first, second, third = ARGV {% endhighlight %}</description>
+    </item>
+    
+  </channel>
+</rss>
