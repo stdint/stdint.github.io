@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>https://stdint.github.io/es/sitemap.xml</loc>
+	   	<loc>https://stdint.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2018-02-11T00:00:00+00:00</lastmod>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>https://stdint.github.io/en/sitemap.xml</loc>
-		
-	   	<lastmod>2018-02-11T00:00:00+00:00</lastmod>
+	   	<loc>https://stdint.github.io/es/sitemap.xml</loc>
 		
 	</sitemap>
 	
