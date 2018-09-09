@@ -19,5 +19,3 @@ fields:
 - type: boolean
   name: disableComments
   label: disableComments
-pages:
-- content/post/.md
