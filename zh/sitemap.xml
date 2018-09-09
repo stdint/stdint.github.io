@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://stdint.github.io/es/categories/</loc>
+    <loc>https://stdint.github.io/zh/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -12,13 +12,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://stdint.github.io/es/categories/"
+                hreflang="zh"
+                href="https://stdint.github.io/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://stdint.github.io/es/</loc>
+    <loc>https://stdint.github.io/zh/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -27,13 +27,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://stdint.github.io/es/"
+                hreflang="zh"
+                href="https://stdint.github.io/zh/"
                 />
   </url>
   
   <url>
-    <loc>https://stdint.github.io/es/tags/</loc>
+    <loc>https://stdint.github.io/zh/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -42,8 +42,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://stdint.github.io/es/tags/"
+                hreflang="zh"
+                href="https://stdint.github.io/zh/tags/"
                 />
   </url>
   
