@@ -1,7 +1,7 @@
 install:
   - git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
   - cd $TRAVIS_REPO_SLUG
-  - ./$TRAVIS_REPO_SLUG/bin/hugo
+  - ./bin/hugo
   - git checkout -qf $TRAVIS_COMMIT
 
 script:
