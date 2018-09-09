@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+	<head>
+		<title>如何写Rakefile &middot; Massively</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href='/assets/css/main.css' />
+		
+		<noscript><link rel="stylesheet" href='/assets/css/noscript.css' /></noscript>
+	</head>
+
+	<body lang='en' class="is-loading">
+
+		
+			<div id="wrapper">
+
+                
+<header id="header">
+    <a href='/' class="logo">Massively</a>
+</header>
+
+                
+
+<nav id="nav">
+    <ul class="links">
+        <li class="active"><a href='/'>Massively</a></li>
+        
+        <li><a href='/#footer'>Contact</a></li>
+        
+        
+    </ul>
+    
+    <ul class="icons">
+        
+        <li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        
+        
+        <li><a href="https://facebook.com" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        
+        
+        <li><a href="https://instagram.com" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        
+        
+        <li><a href="https://www.linkedin.com" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        
+        
+        <li><a href="https://github.com/" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        
+        
+        <li><a href="https://youtube.com/" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+        
+        
+        <li><a href="https://plus.google.com/" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
+        
+        
+        <li><a href="https://last.fm/" class="icon fa-lastfm"><span class="label">Last.fm</span></a></li>
+        
+        
+        <li><a href="https://flickr.com/" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
+        
+    </ul>
+    
+</nav>
+
+
+				
+					<div id="main">
+
+						
+                        <section class="post">
+                            <header class="major">
+                                
+                                <span class="date">August 5, 2017</span>
+                                
+                                <h1>如何写Rakefile</h1>
+                                <p></p>
+                            </header>
+                            
+                            
+
+<p>Rakefile完全使用Ruby语法，没有额外的特殊语法。</p>
+
+<h1 id="rake执行的path">Rake执行的path</h1>
+
+<p>在某个项目中的任何一个目录下下执行rake，如果当前目录下没有Rakefile，那么rake会自动向着根目录的方向去寻找Rakefile。
+这样的好处是在任何文件夹下定义的一些rake模块都是以Rakefile所在的目录的路径执行的。</p>
+
+<p>Make就没有这么省事了。</p>
+
+<h1 id="任务">任务</h1>
+
+<h2 id="任务规则">任务规则</h2>
+
+<ul>
+<li>定义一个任务：
+{% highlight ruby %}
+task :name #标记类型作为任务名
+task &lsquo;name&rsquo; #字符串作为任务名
+task :name do |t|
+&hellip;
+end
+task :name =&gt; :prerequisite #任务的依赖规则
+task :name =&gt; [:pre1, :pre2] #多个依赖
+{% endhighlight %}</li>
+<li>默认任务：
+可以选择某个任务作为默认任务
+{% highlight ruby %}
+task :default =&gt; :one
+task :one =&gt; :two do
+&hellip;
+end
+task :two do
+&hellip;
+end
+{% endhighlight %}</li>
+<li>文件任务
+文件任务用于生成一些新的文件，需要使用file方法。
+{% highlight ruby %}
+file &ldquo;filename&rdquo; =&gt; [&ldquo;a.o&rdquo;, &ldquo;b.o&rdquo;] do |t|
+sh &ldquo;cc -o #{t.name} #{t.prerequisites.join(&rsquo; &lsquo;)}&rdquo;
+end
+{% endhighlight %}</li>
+<li>文件夹任务
+用于生成文件夹，可以嵌套生成。
+{% highlight ruby %}
+file &ldquo;top/second/third&rdquo;
+{% endhighlight %}</li>
+<li>并行任务
+可以多线程并行执行依赖规则。
+{% highlight ruby %}
+multitask :copyfiles =&gt; [:pre1, :pre2, :pre3] do
+puts &ldquo;Tasks are done!&rdquo;
+end
+{% endhighlight %}</li>
+<li>注释
+{% highlight ruby %}
+desc &ldquo;用于注释下面的任务&rdquo;
+task :name =&gt; [:pre1, :pre2, :pre3] do
+&hellip;
+end
+{% endhighlight %}</li>
+</ul>
+
+<h2 id="执行shell命令">执行Shell命令</h2>
+
+<p>Rake任务并不限于Ruby语句，也可以执行Shell命令。
+{% highlight ruby %}
+task :pwd do
+  sh &ldquo;pwd&rdquo;
+end
+{% endhighlight %}</p>
+
+<h1 id="命名域">命名域</h1>
+
+<p>为了防止任务名字打架，Rake提供了定义命名域的方法用于规避。
+{% highlight ruby %}
+namespace :main do
+  task :a do
+    &hellip;
+  end
+end
+{% endhighlight %}</p>
+
+<h1 id="clean和clobber">Clean和Clobber</h1>
+
+<p>Rake提供了Clean和Clobber规则用于清理build环境。
+Clobber规则默认会执行Clean规则。
+{% highlight ruby %}
+require &lsquo;rake/clean&rsquo;
+{% endhighlight %}</p>
+
+<h1 id="一些有用的rake命令">一些有用的Rake命令</h1>
+
+<p>以下命令均可以添加额外的任务名、名字域名，来缩小打印信息范围。
+- rake -T
+  打印任务注释（也就是desc方法定义的字符串）。
+- rake -P
+  打印任务的依赖关系。
+- rake -W
+  显示某个任务定义在Rakefile的哪一行，便于debug。</p>
+
+
+                            
+                            
+                            
+                            
+                            
+                        </section>
+
+					</div>
+
+                    
+
+<footer id="footer">
+    
+    <section>
+        <form method="post" action="post-action">
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value='Send A Message' /></li>
+            </ul>
+        </form>
+    </section>
+    
+    <section class="split contact">
+        
+        <section class="alt">
+            <h3>Address</h3>
+            <p>
+                
+                     1234 Somewhere Road #87257
+                
+                     <br/>  Nashville, TN 00000-0000
+                
+            </p>
+        </section>
+        
+        
+        <section>
+            <h3>Phone</h3>
+            <p><a href="tel:%28800%29%20000-0000">(800) 000-0000</a></p>
+        </section>
+        
+        
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:someone@untitled.tld">someone@untitled.tld</a></p>
+        </section>
+        
+        
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                
+                <li><a href="https://twitter.com/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                
+                
+                <li><a href="https://facebook.com" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                
+                
+                <li><a href="https://instagram.com" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                
+                
+                <li><a href="https://www.linkedin.com" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                
+                
+                <li><a href="https://github.com/" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                
+                
+                <li><a href="https://youtube.com/" class="icon alt fa-youtube"><span class="label">Youtube</span></a></li>
+                
+                
+                <li><a href="https://plus.google.com/" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                
+                
+                <li><a href="https://last.fm/" class="icon alt fa-lastfm"><span class="label">Last.fm</span></a></li>
+                
+                
+                <li><a href="https://flickr.com/" class="icon alt fa-flickr"><span class="label">Flickr</span></a></li>
+                
+            </ul>
+        </section>
+        
+    </section>
+</footer>
+
+                    
+<div id="copyright">
+    <ul><li>&copy; Massively</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Hugo Port: <a href="https://curtistimson.co.uk">curttimson</a></li></ul>
+</div>
+
+
+            </div>
+            
+            
+<script src='/assets/js/jquery.min.js'></script>
+<script src='/assets/js/jquery.scrollex.min.js'></script>
+<script src='/assets/js/jquery.scrolly.min.js'></script>
+<script src='/assets/js/skel.min.js'></script>
+<script src='/assets/js/util.js'></script>
+<script src='/assets/js/main.js'></script>
+
+
+	</body>
+</html>
