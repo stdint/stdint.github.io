@@ -3,146 +3,146 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/post/2018-02-11-2018-02-11-weekly/</loc>
+    <loc>/post/2018-02-11-2018-02-11-weekly/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2018-02-04-2018-02-04-weekly/</loc>
+    <loc>/post/2018-02-04-2018-02-04-weekly/</loc>
     <lastmod>2018-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2018-01-20-2018-01-20-weekly/</loc>
+    <loc>/post/2018-01-20-2018-01-20-weekly/</loc>
     <lastmod>2018-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2018-01-13-2018-01-13-weekly/</loc>
+    <loc>/post/2018-01-13-2018-01-13-weekly/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-08-05-how-to-write-rakefile/</loc>
+    <loc>/post/2017-08-05-how-to-write-rakefile/</loc>
     <lastmod>2017-08-05T21:00:15-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-07-27-reading-chicken-soup/</loc>
+    <loc>/post/2017-07-27-reading-chicken-soup/</loc>
     <lastmod>2017-07-27T23:22:18-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-07-17-c&#43;&#43;-initialization/</loc>
+    <loc>/post/2017-07-17-c&#43;&#43;-initialization/</loc>
     <lastmod>2017-07-17T22:40:26-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-06-22-ruby-first-impression/</loc>
+    <loc>/post/2017-06-22-ruby-first-impression/</loc>
     <lastmod>2017-06-22T21:10:32-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-06-17-driving-differences-between-china-and-us/</loc>
+    <loc>/post/2017-06-17-driving-differences-between-china-and-us/</loc>
     <lastmod>2017-06-17T21:58:10-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-06-07-memories-in-embedded-systems/</loc>
+    <loc>/post/2017-06-07-memories-in-embedded-systems/</loc>
     <lastmod>2017-06-07T21:08:25-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-05-30-github-pages-use-third-party-theme/</loc>
+    <loc>/post/2017-05-30-github-pages-use-third-party-theme/</loc>
     <lastmod>2017-05-30T23:29:33-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/c&#43;&#43;/</loc>
+    <loc>/categories/c&#43;&#43;/</loc>
     <lastmod>2017-07-17T22:40:26-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2017-07-17T22:40:26-07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/categories/"
+                href="/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/github-pages/</loc>
+    <loc>/categories/github-pages/</loc>
     <lastmod>2017-05-30T23:29:33-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/rake/</loc>
+    <loc>/tags/rake/</loc>
     <lastmod>2017-08-05T21:00:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/ruby/</loc>
+    <loc>/categories/ruby/</loc>
     <lastmod>2017-08-05T21:00:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-08-05T21:00:15-07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/"
+                href="/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+    <loc>/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
     <lastmod>2017-06-07T21:08:25-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%83%B3%E6%B3%95/</loc>
+    <loc>/categories/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2017-07-27T23:22:18-07:00</lastmod>
     <priority>0</priority>
   </url>

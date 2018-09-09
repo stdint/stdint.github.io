@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>嵌入式 on Massively</title>
-    <link>http://localhost:1313/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</link>
+    <link>/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</link>
     <description>Recent content in 嵌入式 on Massively</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Jun 2017 21:08:25 -0700</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>嵌入式系统中的存储器</title>
-      <link>http://localhost:1313/post/2017-06-07-memories-in-embedded-systems/</link>
+      <link>/post/2017-06-07-memories-in-embedded-systems/</link>
       <pubDate>Wed, 07 Jun 2017 21:08:25 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/2017-06-07-memories-in-embedded-systems/</guid>
+      <guid>/post/2017-06-07-memories-in-embedded-systems/</guid>
       <description> 一般来说，嵌入式系统中常见的存储器可以分为以下几类：
  RAM，随机存储器 ROM，只读存储器 混合型存储器  每一类存储器根据特性还可以细分成很多不同的器件类型。下面我就说明一下每一类存储器。
 主要特性 RAM 可读写的存储器，存取速度快，相对造价高。 - SRAM:只要通电，数据就不会丢失 - DRAM:不论通电与否，数据生命期较短，大约4ms - SRAM vs DRAM:SRAM存取时间比DRAM快大约4倍，但是成本远高于后者
