@@ -2,8 +2,8 @@ languageCode = "en-us"
 title = "Massively"
 baseURL = "https://stdint.github.io/"
 theme = "massively"
-googleanalytics = ""
-disqusShortname = ""
+#googleanalytics = ""
+#disqusShortname = ""
 
 # [params]
   # set below parameter to define a favicon
@@ -18,9 +18,6 @@ disqusShortname = ""
 [languages]
 [languages.en]
   languageName = "English"
-[languages.es]
-  languageName = "Español"
-  title = "Massively - Versión Español"
-#[languages.fr]
-#  languageName = "Français"
-#  title = "Massively - Version Française"
+[languages.zh]
+  languageName = "中文"
+  title = "Massively - Versión 中文"
