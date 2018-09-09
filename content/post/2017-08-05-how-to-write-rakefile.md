@@ -5,9 +5,9 @@ title: 如何写Rakefile
 mathjax: false
 featured: true
 comments: false
-categories: 
+categories:
   - ruby
-tags: rake
+tags: ["rake"]
 date: 2017-08-05 21:00:15 -0700
 ---
 
