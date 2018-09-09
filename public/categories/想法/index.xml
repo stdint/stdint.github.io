@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>想法 on Natrium Theme</title>
+    <link>https://stdint.github.io/categories/%E6%83%B3%E6%B3%95/</link>
+    <description>Recent content in 想法 on Natrium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jul 2017 23:22:18 -0700</lastBuildDate>
+    
+	<atom:link href="https://stdint.github.io/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>鸡汤文读后感</title>
+      <link>https://stdint.github.io/%E9%B8%A1%E6%B1%A4%E6%96%87%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
+      <pubDate>Thu, 27 Jul 2017 23:22:18 -0700</pubDate>
+      
+      <guid>https://stdint.github.io/%E9%B8%A1%E6%B1%A4%E6%96%87%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
+      <description>今天刷朋友圈看到一篇文章，标题是《如果35岁时破产，还有多大可能逆袭？》。文章提出了一个简单的游戏模型来模拟经济活动：假设每个人起点相同，都有100元，每个人每一天随机从另外一个人那里赚走1元钱。文章作者进行这样的操作很多轮，来模拟经过很多年之后的每个人的财富分布。
+文章主要得出了这些结论： - 最终大部分的钱跑进了少部分人的口袋里。 - 允许借贷的条件下，35岁时破产的人很难逆袭，发财要趁早。 - 富二代维持财富的概率极高 - 增税会减缓但并不会消除贫富差距 - 努力的人还是会混得不错
+这个鸡汤满满的文章写得很是不错，不仅有科学分析、实验论证，而且提出了社会经济问题，让网友们看得忿忿不平，感叹自己运气不好。文章最后还给出了鸡汤的精华，只要每天比别人多努力一点点，就离成功不远啦！
+然而，这个其实不就是数理统计里面最基础的_正态分布_吗？？文章全程似乎并没有提到正态分布，然而这样的随机试验，最终的结果必然是正态分布。现在人们都太依赖利用电脑程序来帮助计算了，似乎有点失去了纸笔推公式的意思了？在AI的时代，人们可不要退化掉思考的能力。
+数学理论这样包装一下，倒是让人看得有兴趣又记忆深刻。</description>
+    </item>
+    
+    <item>
+      <title>在美国开车的注意事项</title>
+      <link>https://stdint.github.io/%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%BC%80%E8%BD%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Sat, 17 Jun 2017 21:58:10 -0700</pubDate>
+      
+      <guid>https://stdint.github.io/%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%BC%80%E8%BD%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+      <description>在美国，除了纽约、旧金山几个为数不多的大城市，干什么事都离不开开车。作为在美开车多年的老司机，同时又有国内开车的经验，我想简单总结一下在美国开车和在国内不同的地方，方便来美国短期旅游、访问、出差的同胞。
+ 在美国开车，总体上要比国内快，要注意车距的把握。 Stop标志的处理，类似于国内的“停”。注意要在标志处完全停止，然后获得路权时通过。如果其他方向也有Stop标志，以先到先得原则获得路权。 红灯右转，在国内是可以直接开过去的，美国不行。美国必须停车，确认道口安全，才可以起速右转。如果道口有标志禁止红灯右转则不可以在红灯的时候右转。 黄灯的处理，在美国是可以在黄灯的情况下过路口的，国内好像说不行，实际操作又好像可以&amp;hellip;&amp;hellip; 在美国任何情况下都是车让人。 在美国如果路上遇到了出警的火警、警察、救护车，法规规定必须靠边停车，让出道路。据说出殡的车辆也需要让，有可能只是一个友好的习俗。 美国一般都是自助加油的，所以，要加对油品哦，不要给加成了柴油，就麻烦了。  以上。</description>
+    </item>
+    
+  </channel>
+</rss>
