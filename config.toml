@@ -1,4 +1,4 @@
-languageCode = "en-us"
+languageCode = "ch-zh"
 title = "Massively"
 baseURL = "https://stdint.github.io/"
 theme = "massively"
