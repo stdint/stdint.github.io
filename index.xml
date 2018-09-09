@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Massively</title>
-    <link>/</link>
+    <link>https://stdint.github.io/</link>
     <description>Recent content on Massively</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stdint.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2018-02-11 周记</title>
-      <link>/post/2018-02-11-2018-02-11-weekly/</link>
+      <link>https://stdint.github.io/post/2018-02-11-2018-02-11-weekly/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-11-2018-02-11-weekly/</guid>
+      <guid>https://stdint.github.io/post/2018-02-11-2018-02-11-weekly/</guid>
       <description>有点懂梵高为什么这么牛了。
 题图是梵高的《阿尔的吊桥》，是他“晚年”在法国阿尔独居时所绘。我之前不知道这样一幅画的存在，这周看到，心里升起了一种巨大的感动。湖水清澈，蓝天无云，感觉没有风，画面很安静且美好。被工作折磨了一周的我，瞬间被治愈了。我接着Google了一下梵高的知名作品，比如耳熟能详的《星夜》。看着这些名画，我竟然产生了不一样的感受：他的作品有着治愈心灵的力量。
 最近让我感动的，除了梵高，还有小南泰叶。偶然间在虾米上听到她的歌，听得我浑身鸡皮疙瘩，甚是感动。于是整个周末都在循环她的歌单，上次让我如此感动的，好像是椎名林檎。这周听下来，我最喜欢的是《No Man》，从曲风到歌词到小南泰叶的嘶哑唱腔，都配合得如此完美。感动得，想哭。
@@ -27,10 +27,10 @@
     
     <item>
       <title>2018-02-04 周记</title>
-      <link>/post/2018-02-04-2018-02-04-weekly/</link>
+      <link>https://stdint.github.io/post/2018-02-04-2018-02-04-weekly/</link>
       <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-04-2018-02-04-weekly/</guid>
+      <guid>https://stdint.github.io/post/2018-02-04-2018-02-04-weekly/</guid>
       <description>这两周入门了美国房贷，基本上分为两种，30年固定利率和ARM（可变利率房贷）。ARM也分成5/1，7/1和10/1的不同类型。
 30年固定利率贷款的好处是利率固定，不会受到市场波动影响。缺点是，这种贷款的利率相比于ARM来说是比较差的。ARM可以提供更加优惠的利率，这个优惠的利率会锁定一个相对短的年限，此后以一年为周期进行调整。所谓调整也不是完全没有控制的，一般会限制一个调整幅度上限，比如2%。此外，ARM还有最终利率的上限限制。ARM分为5/1，7/1和10/1，指的是5年，7年和10年的固定利率，此外每一年调整一次。5年ARM的利率最好，但是也很难获得，需要比较高的条件。
 以前一直认为高信用分数是获得贷款的唯一条件，其实不然。高信用分数是贷款的必要不充分条件，underwriter（审批贷款的人）会看收入债务比，现金流等等。只有收入债务比低于35%或某个数字，然后现金可以支撑失业后房贷+房产税N个月的支出，才会认为可以放贷。经济危机之后，审批变得比较严格，需要很多很多的证明。</description>
@@ -38,10 +38,10 @@
     
     <item>
       <title>2018-01-20 周记</title>
-      <link>/post/2018-01-20-2018-01-20-weekly/</link>
+      <link>https://stdint.github.io/post/2018-01-20-2018-01-20-weekly/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-01-20-2018-01-20-weekly/</guid>
+      <guid>https://stdint.github.io/post/2018-01-20-2018-01-20-weekly/</guid>
       <description>今天想说说独立思考，这是一个优秀的人必备的品格。
 人是社会动物，从出生开始就生活在某个群体中：家庭，学校，公司以及社会。在这些群体中我们都很容易被他人影响自己的思维，有时候做的决定并不是自己思考的结果。因为懒，我们会盲从领导，大V，媒体。久而久之，甚至会失去思考的能力。《从0到1》里说工程师往往会认为“只要产品自身品质足够好，不需要营销就能大卖”，而这是错误的，好产品也需要好营销策略才能成功，好酒也怕巷子深。我不禁冒冷汗：我也曾经是营销无用论的忠实拥趸！
 思维决定了行为方式。《富爸爸穷爸爸》的作者提到，风险是一个相对的概念，和思维角度很有关系。“穷爸爸”认为有稳定的工作是正经事：稳定的工作带来稳定的收入和生活，何乐不为。“富爸爸”却认为稳定工作是很有风险的事情：世界是变化的，现在稳定的职位、技能以及公司可能在未来会被淘汰，而现在从事稳定的工作可能会固化思维、停止学习，带来未来失业风险。这种本质上的思维差异，导致了富爸爸穷爸爸们在关键问题上做出不一样的决策：买大房子vs买小房子，工作vs创业，储蓄vs投资。于是，锻炼自己的思维，打造成功者思考问题的方式便成了最重要的课题：这种思考方式会指向成功。
@@ -51,10 +51,10 @@
     
     <item>
       <title>2018-01-13 周记</title>
-      <link>/post/2018-01-13-2018-01-13-weekly/</link>
+      <link>https://stdint.github.io/post/2018-01-13-2018-01-13-weekly/</link>
       <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-01-13-2018-01-13-weekly/</guid>
+      <guid>https://stdint.github.io/post/2018-01-13-2018-01-13-weekly/</guid>
       <description>和老婆聊天，谈起写作的重要性。写作是很好的总结经验教训，指导未来生活的方式。我决定2018年开始写周记，希望不是一个flag。
 和写作一起被再次拾起的是锅铲。来了湾区就真的没有正儿八经的做过菜，公司提供了很多食物，另外周边的中餐馆选择也多，于是就懒了。前一周忐忑地做了个经典家常菜番茄炒鸡蛋，口感还不错，信心大增。这周末尝试做咖喱鸡块，然而不幸滑铁卢。土豆被烧化了，鸡肉也缩了，导致做出了咖喱汤。仔细想想，我好像从来都没有很成功的做过咖喱。
 2018年我又开始做健身操了。结婚之前为了保证良好的身材做了几个月的健身操，然后因为忙结婚忙工作，就给放下了一阵子。当时做了几个月，我觉得还是很有效果，脖子不酸痛了，肌肉块也开始出现。健身这件事情还是要持之以恒，坚持就会有效果，就像背英语单词一样。健身操有两种，一种是教练真人带着做的，一种是跟着视频做的。今天是2018年第一次去上教练教的，教练居然还记得我，问我怎么有一阵子没有来了。隔了好几个月还能记着一个不熟的人，我觉得也是一个很牛的技能。
@@ -63,10 +63,10 @@
     
     <item>
       <title>如何写Rakefile</title>
-      <link>/post/2017-08-05-how-to-write-rakefile/</link>
+      <link>https://stdint.github.io/post/2017-08-05-how-to-write-rakefile/</link>
       <pubDate>Sat, 05 Aug 2017 21:00:15 -0700</pubDate>
       
-      <guid>/post/2017-08-05-how-to-write-rakefile/</guid>
+      <guid>https://stdint.github.io/post/2017-08-05-how-to-write-rakefile/</guid>
       <description>Rakefile完全使用Ruby语法，没有额外的特殊语法。
 Rake执行的path 在某个项目中的任何一个目录下下执行rake，如果当前目录下没有Rakefile，那么rake会自动向着根目录的方向去寻找Rakefile。 这样的好处是在任何文件夹下定义的一些rake模块都是以Rakefile所在的目录的路径执行的。
 Make就没有这么省事了。
@@ -75,10 +75,10 @@ Make就没有这么省事了。
     
     <item>
       <title>鸡汤文读后感</title>
-      <link>/post/2017-07-27-reading-chicken-soup/</link>
+      <link>https://stdint.github.io/post/2017-07-27-reading-chicken-soup/</link>
       <pubDate>Thu, 27 Jul 2017 23:22:18 -0700</pubDate>
       
-      <guid>/post/2017-07-27-reading-chicken-soup/</guid>
+      <guid>https://stdint.github.io/post/2017-07-27-reading-chicken-soup/</guid>
       <description>今天刷朋友圈看到一篇文章，标题是《如果35岁时破产，还有多大可能逆袭？》。文章提出了一个简单的游戏模型来模拟经济活动：假设每个人起点相同，都有100元，每个人每一天随机从另外一个人那里赚走1元钱。文章作者进行这样的操作很多轮，来模拟经过很多年之后的每个人的财富分布。
 文章主要得出了这些结论： - 最终大部分的钱跑进了少部分人的口袋里。 - 允许借贷的条件下，35岁时破产的人很难逆袭，发财要趁早。 - 富二代维持财富的概率极高 - 增税会减缓但并不会消除贫富差距 - 努力的人还是会混得不错
 这个鸡汤满满的文章写得很是不错，不仅有科学分析、实验论证，而且提出了社会经济问题，让网友们看得忿忿不平，感叹自己运气不好。文章最后还给出了鸡汤的精华，只要每天比别人多努力一点点，就离成功不远啦！
@@ -88,10 +88,10 @@ Make就没有这么省事了。
     
     <item>
       <title>C&#43;&#43;变量初始化方法</title>
-      <link>/post/2017-07-17-c&#43;&#43;-initialization/</link>
-      <pubDate>Mon, 17 Jul 2017 22:40:26 -0700</pubDate>
+      <link>https://stdint.github.io/post/2017-07-17-c&#43;&#43;-initialization/</link>
+      <pubDate>Tue, 18 Jul 2017 05:40:26 +0000</pubDate>
       
-      <guid>/post/2017-07-17-c&#43;&#43;-initialization/</guid>
+      <guid>https://stdint.github.io/post/2017-07-17-c&#43;&#43;-initialization/</guid>
       <description>现在的C++有三种初始化变量的方法，他们分别是 - 赋值语句，也就是等号 - 小括号，其实是调用构造函数 - 花括号（C++11以后）
 等号赋值是传统的C语言赋值，当变量数据类型涵盖范围较小时，有可能会丢失高位信息，造成错误。 {% highlight c++ %} int i1 = 7.8 // i1 becomes 7(surprise?) {% endhighlight %}
 小括号等于是调用了构造函数，没有什么特别好讲的。
@@ -102,30 +102,30 @@ C++11推出了initializer list，即花括号语法。这种方法会在编译�
     
     <item>
       <title>Ruby初体验</title>
-      <link>/post/2017-06-22-ruby-first-impression/</link>
+      <link>https://stdint.github.io/post/2017-06-22-ruby-first-impression/</link>
       <pubDate>Thu, 22 Jun 2017 21:10:32 -0700</pubDate>
       
-      <guid>/post/2017-06-22-ruby-first-impression/</guid>
+      <guid>https://stdint.github.io/post/2017-06-22-ruby-first-impression/</guid>
       <description>今天初步体验了一下Ruby语言，获得了一点初级的认识。
  动态类型语言 解释器语言 格式要求比Python宽松 纯面向对象的语言，所有的元素都是对象 类似C的语法结构  语法糖： - 减少了很多花括号的使用 - 首字母大写代表常量，小写代表变量 - 自带两种打印方法puts和print，puts自带回车 - 简单的array unpacking，例子： {% highlight ruby %} first, second, third = ARGV {% endhighlight %}</description>
     </item>
     
     <item>
       <title>在美国开车的注意事项</title>
-      <link>/post/2017-06-17-driving-differences-between-china-and-us/</link>
+      <link>https://stdint.github.io/post/2017-06-17-driving-differences-between-china-and-us/</link>
       <pubDate>Sat, 17 Jun 2017 21:58:10 -0700</pubDate>
       
-      <guid>/post/2017-06-17-driving-differences-between-china-and-us/</guid>
+      <guid>https://stdint.github.io/post/2017-06-17-driving-differences-between-china-and-us/</guid>
       <description>在美国，除了纽约、旧金山几个为数不多的大城市，干什么事都离不开开车。作为在美开车多年的老司机，同时又有国内开车的经验，我想简单总结一下在美国开车和在国内不同的地方，方便来美国短期旅游、访问、出差的同胞。
  在美国开车，总体上要比国内快，要注意车距的把握。 Stop标志的处理，类似于国内的“停”。注意要在标志处完全停止，然后获得路权时通过。如果其他方向也有Stop标志，以先到先得原则获得路权。 红灯右转，在国内是可以直接开过去的，美国不行。美国必须停车，确认道口安全，才可以起速右转。如果道口有标志禁止红灯右转则不可以在红灯的时候右转。 黄灯的处理，在美国是可以在黄灯的情况下过路口的，国内好像说不行，实际操作又好像可以&amp;hellip;&amp;hellip; 在美国任何情况下都是车让人。 在美国如果路上遇到了出警的火警、警察、救护车，法规规定必须靠边停车，让出道路。据说出殡的车辆也需要让，有可能只是一个友好的习俗。 美国一般都是自助加油的，所以，要加对油品哦，不要给加成了柴油，就麻烦了。  以上。</description>
     </item>
     
     <item>
       <title>嵌入式系统中的存储器</title>
-      <link>/post/2017-06-07-memories-in-embedded-systems/</link>
+      <link>https://stdint.github.io/post/2017-06-07-memories-in-embedded-systems/</link>
       <pubDate>Wed, 07 Jun 2017 21:08:25 -0700</pubDate>
       
-      <guid>/post/2017-06-07-memories-in-embedded-systems/</guid>
+      <guid>https://stdint.github.io/post/2017-06-07-memories-in-embedded-systems/</guid>
       <description> 一般来说，嵌入式系统中常见的存储器可以分为以下几类：
  RAM，随机存储器 ROM，只读存储器 混合型存储器  每一类存储器根据特性还可以细分成很多不同的器件类型。下面我就说明一下每一类存储器。
 主要特性 RAM 可读写的存储器，存取速度快，相对造价高。 - SRAM:只要通电，数据就不会丢失 - DRAM:不论通电与否，数据生命期较短，大约4ms - SRAM vs DRAM:SRAM存取时间比DRAM快大约4倍，但是成本远高于后者
@@ -136,10 +136,10 @@ PK环节  易失性: RAM易失，其余非易失 可写：RAM、EPROM、EEPROM�
     
     <item>
       <title>Github Pages使用第三方主题</title>
-      <link>/post/2017-05-30-github-pages-use-third-party-theme/</link>
+      <link>https://stdint.github.io/post/2017-05-30-github-pages-use-third-party-theme/</link>
       <pubDate>Tue, 30 May 2017 23:29:33 -0700</pubDate>
       
-      <guid>/post/2017-05-30-github-pages-use-third-party-theme/</guid>
+      <guid>https://stdint.github.io/post/2017-05-30-github-pages-use-third-party-theme/</guid>
       <description>第N次开博客。使用的是Github官方支持的jekyll和免费的静态域名，加上git以及markdown的加持，感觉这次说不定能写下去!（好大的一个flag&amp;hellip;&amp;hellip;)
 不过多介绍Github Pages了，官网的教程很简洁明了。官方也提供了使用Jekyll搭建一个简单的静态网站的教程，也是十分简单易懂。然而，官方只支持13种Jekyll主题，而且也都不是很好看。
 我决定Google一下，找找看怎么使用第三方主题的方法。

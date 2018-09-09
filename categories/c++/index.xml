@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Massively</title>
-    <link>/categories/c&#43;&#43;/</link>
+    <link>https://stdint.github.io/categories/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Massively</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jul 2017 22:40:26 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jul 2017 05:40:26 +0000</lastBuildDate>
     
-	<atom:link href="/categories/c++/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stdint.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C&#43;&#43;变量初始化方法</title>
-      <link>/post/2017-07-17-c&#43;&#43;-initialization/</link>
-      <pubDate>Mon, 17 Jul 2017 22:40:26 -0700</pubDate>
+      <link>https://stdint.github.io/post/2017-07-17-c&#43;&#43;-initialization/</link>
+      <pubDate>Tue, 18 Jul 2017 05:40:26 +0000</pubDate>
       
-      <guid>/post/2017-07-17-c&#43;&#43;-initialization/</guid>
+      <guid>https://stdint.github.io/post/2017-07-17-c&#43;&#43;-initialization/</guid>
       <description>现在的C++有三种初始化变量的方法，他们分别是 - 赋值语句，也就是等号 - 小括号，其实是调用构造函数 - 花括号（C++11以后）
 等号赋值是传统的C语言赋值，当变量数据类型涵盖范围较小时，有可能会丢失高位信息，造成错误。 {% highlight c++ %} int i1 = 7.8 // i1 becomes 7(surprise?) {% endhighlight %}
 小括号等于是调用了构造函数，没有什么特别好讲的。

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github Pages on Massively</title>
-    <link>/categories/github-pages/</link>
+    <link>https://stdint.github.io/categories/github-pages/</link>
     <description>Recent content in Github Pages on Massively</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 May 2017 23:29:33 -0700</lastBuildDate>
     
-	<atom:link href="/categories/github-pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stdint.github.io/categories/github-pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Github Pages使用第三方主题</title>
-      <link>/post/2017-05-30-github-pages-use-third-party-theme/</link>
+      <link>https://stdint.github.io/post/2017-05-30-github-pages-use-third-party-theme/</link>
       <pubDate>Tue, 30 May 2017 23:29:33 -0700</pubDate>
       
-      <guid>/post/2017-05-30-github-pages-use-third-party-theme/</guid>
+      <guid>https://stdint.github.io/post/2017-05-30-github-pages-use-third-party-theme/</guid>
       <description>第N次开博客。使用的是Github官方支持的jekyll和免费的静态域名，加上git以及markdown的加持，感觉这次说不定能写下去!（好大的一个flag&amp;hellip;&amp;hellip;)
 不过多介绍Github Pages了，官网的教程很简洁明了。官方也提供了使用Jekyll搭建一个简单的静态网站的教程，也是十分简单易懂。然而，官方只支持13种Jekyll主题，而且也都不是很好看。
 我决定Google一下，找找看怎么使用第三方主题的方法。

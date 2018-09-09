@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Massively</title>
-    <link>/categories/ruby/</link>
+    <link>https://stdint.github.io/categories/ruby/</link>
     <description>Recent content in Ruby on Massively</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Aug 2017 21:00:15 -0700</lastBuildDate>
     
-	<atom:link href="/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stdint.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何写Rakefile</title>
-      <link>/post/2017-08-05-how-to-write-rakefile/</link>
+      <link>https://stdint.github.io/post/2017-08-05-how-to-write-rakefile/</link>
       <pubDate>Sat, 05 Aug 2017 21:00:15 -0700</pubDate>
       
-      <guid>/post/2017-08-05-how-to-write-rakefile/</guid>
+      <guid>https://stdint.github.io/post/2017-08-05-how-to-write-rakefile/</guid>
       <description>Rakefile完全使用Ruby语法，没有额外的特殊语法。
 Rake执行的path 在某个项目中的任何一个目录下下执行rake，如果当前目录下没有Rakefile，那么rake会自动向着根目录的方向去寻找Rakefile。 这样的好处是在任何文件夹下定义的一些rake模块都是以Rakefile所在的目录的路径执行的。
 Make就没有这么省事了。
@@ -25,10 +25,10 @@ Make就没有这么省事了。
     
     <item>
       <title>Ruby初体验</title>
-      <link>/post/2017-06-22-ruby-first-impression/</link>
+      <link>https://stdint.github.io/post/2017-06-22-ruby-first-impression/</link>
       <pubDate>Thu, 22 Jun 2017 21:10:32 -0700</pubDate>
       
-      <guid>/post/2017-06-22-ruby-first-impression/</guid>
+      <guid>https://stdint.github.io/post/2017-06-22-ruby-first-impression/</guid>
       <description>今天初步体验了一下Ruby语言，获得了一点初级的认识。
  动态类型语言 解释器语言 格式要求比Python宽松 纯面向对象的语言，所有的元素都是对象 类似C的语法结构  语法糖： - 减少了很多花括号的使用 - 首字母大写代表常量，小写代表变量 - 自带两种打印方法puts和print，puts自带回车 - 简单的array unpacking，例子： {% highlight ruby %} first, second, third = ARGV {% endhighlight %}</description>
     </item>
