@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "C++变量初始化方法"
-date: 2017-07-17 22:40:26 -0700
+title: C++变量初始化方法
+date: 2017-07-18 05:40:26 +0000
 featured: true
-categories: 
-  - C++
+categories:
+- C++
+
 ---
 现在的C++有三种初始化变量的方法，他们分别是
 - 赋值语句，也就是等号
