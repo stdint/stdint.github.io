@@ -4,9 +4,6 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  label: tl;dr
-  name: tl_dr
-  description: tl;dr
-- type: textarea
-pages:
-- content/post/.md
+  name: title
+  label: title
+  description: title
