@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Massively"
-baseURL = ""
+baseURL = "https://stdint.github.io/"
 theme = "massively"
 googleanalytics = ""
 disqusShortname = ""
