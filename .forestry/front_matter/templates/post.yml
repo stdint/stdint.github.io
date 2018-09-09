@@ -7,3 +7,15 @@ fields:
   name: title
   label: title
   description: title
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: image
+  label: image
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: disableComments
+  label: disableComments
