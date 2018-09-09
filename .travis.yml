@@ -1,8 +1,8 @@
 install:
   - git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
   - cd $TRAVIS_REPO_SLUG
-  - ./bin/hugo
   - git checkout -qf $TRAVIS_COMMIT
+  - ./bin/hugo
 
 script:
   - bundle install --jobs 4
