@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.48" />
+
+
+<title>C&#43;&#43;变量初始化方法 - Natrium Theme</title>
+<meta property="og:title" content="C&#43;&#43;变量初始化方法 - Natrium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stdint.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://stdint.github.io/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://stdint.github.io/" class="nav-logo">
+    <img src="https://stdint.github.io/images//images/logo.jpg" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">C&#43;&#43;变量初始化方法</h1>
+    
+    <span class="article-date">2017-07-18</span>
+    
+
+    <div class="article-content">
+      <p>现在的C++有三种初始化变量的方法，他们分别是
+- 赋值语句，也就是等号
+- 小括号，其实是调用构造函数
+- 花括号（C++11以后）</p>
+
+<p>等号赋值是传统的C语言赋值，当变量数据类型涵盖范围较小时，有可能会丢失高位信息，造成错误。
+{% highlight c++ %}
+int i1 = 7.8    // i1 becomes 7(surprise?)
+{% endhighlight %}</p>
+
+<p>小括号等于是调用了构造函数，没有什么特别好讲的。</p>
+
+<p>C++11推出了initializer list，即花括号语法。这种方法会在编译时报错（报警告）提示丢失信息的风险。
+在这个语法下，等号不是必须的。
+{% highlight c++ %}
+int i2{7.8}    // error: float-&gt;int
+int i3 = {7.8} // error: float-&gt;int, 等号不是必须的
+{% endhighlight %}</p>
+
+<p>总的来说，等号赋值提供了C的兼容性，但是不安全。花括号赋值是比较被推荐的做法。</p>
+
+<ul>
+<li>例子来自《A Tour Of C++》</li>
+</ul>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/c&#43;&#43;">C&#43;&#43;</a>
+      </li>
+      
+    
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://stdint.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/mobybit/hugo-natrium-theme"><i class="fa fa-github"></i> Code</a>
+          </li>
+          <li>
+            <a href="https://stdint.github.io/site-notice">Site notice</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+
