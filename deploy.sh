@@ -3,6 +3,7 @@ git submodule init
 git submodule update
 git add .
 git commit -m "update develop"
+git push origin develop
 hugo
 git checkout master
 cp -R public/* .
